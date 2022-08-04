@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>崔琛钢琴工作室</title>
     <style type="text/css">
         body{
             background-color: #AAFFEE;
+           
+        }
+        header{
+            max-width: 1024px;
+            margin: 0 auto;
+            overflow: visible;
         }
         .t{
             text-align: center;
         }
         .table{
-            display: flex;
             width: auto;
+            display: flex;
             background-color: white;
+            position: sticky;
+            top: 0;
         }
         .table > div{
             width: 80px;
@@ -25,34 +32,74 @@
             text-align: center;
             background-color: black;
         }
-        .left{
-            width: 50%;
+        .img{
+            border-radius:50%;
+            border: 2px solid black;
+        }
+        .left_img{
+            height: 110%;
+            width: 20%;
             float: left;
         }
-        .right{
-            width: 50%;
+        .right_h1{
+            width: 70%;
             float: right;
+        }
+        .left_h1{
+            width: 70%;
+            float: left;
+        }
+        .right_img{
+            height: 110%;
+            width: 20%;
+            float: right;
+        }
+        .middle{
+            position: relative;
+            top: 70px;
+            left: 10px;
         }
         .center{
             text-align: center;
+
+        }
+        .main{
+            position: relative;
+            height: 200px;
+            margin: 20px;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="table">
-            <div><img src="./img/piano.png" alt="崔琛钢琴工作室" width="50%" height="100%"></div>
-            <div>学生墙</div>
-            <div>天梯排行榜</div>
-            <div>活动排行榜</div>
-            <div>老师简介</div>
-            <div>联系我们</div>
-            <div></div>
-        </div>
-    </header>
-    <h1 class="t">崔琛钢琴工作室</h1>
+    <div class="table" >
+        <div><img src="./img/piano.png" alt="崔琛钢琴工作室" width="50%" height="100%" class="img"></div>
+        <div>学生墙</div>
+        <div>天梯排行榜</div>
+        <div>活动排行榜</div>
+        <div>老师简介</div>
+        <div>联系我们</div>
+        <div></div>
+    </div>
     <main>
-        <img src="./img/piano.png" alt="老师图片" width="30%" height="30%" class="left"><h1 class="center right">老师专业，学习效果才最好。中国音乐学院认证高级音乐教师带您步入音乐的殿堂</h1>
+        <h1 class="t">崔琛钢琴工作室</h1>
+        <div class="main">
+            <img src="./img/piano.png" alt="老师图片" class="img left_img">
+            <h1 class="center right_h1 middle">老师专业，学习效果才最好。中国音乐学院认证高级钢琴教师带您步入音乐的殿堂</h1>
+        </div>
+        <div class="main">
+            <img src="./img/piano.png" alt="钢琴图片" class="img right_img">
+            <h1 class="center left_h1 middle">老师专业，钢琴也要专业，钢琴使用贝希斯坦的齐默曼，一首钢琴曲随手就来！</h1>
+        </div>
+        <div class="main">
+            <img src="./img/piano.png" alt="电钢图片" class="img left_img">
+            <h1 class="center right_h1 middle">嫌自己弹得不好？琴房内随处都有电钢，戴上耳机，在音乐的海洋里遨游！</h1>
+        </div>
+        <div class="main">
+            <img src="./img/piano.png" alt="门面图片" class="img right_img">
+            <h1 class="center left_h1 middle">学钢琴肯定要通过考级证明自己，工作室已被钢琴协会认证为考级报名点，随时欢迎您来报考！</h1>
+        </div>
     </main>
+    
 </body>
 </html>
